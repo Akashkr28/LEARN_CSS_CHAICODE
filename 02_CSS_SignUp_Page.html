@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <style>
+        body{
+            background: rgba(220, 235, 220, 0.971);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(16px);
+            z-index: 10;
+            border-radius: 8px;
+            padding: 30px;
+            width: 350px;
+        }
+        h1{
+            color: #1f1f1f;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            /* background: rgba(220, 235, 220, 0.971); */
+        }
+        img{    
+            object-fit: contain;
+            height: 100px;
+        }
+        h2{
+            color: #1f1f1f;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #d8d8d8;
+            border: none;
+            display: flex;
+        }
+        #nameHolder {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;    
+        }
+        #firstName, #lastName {
+            width: 50%;
+        }
+        #checkbox{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+        button{
+            margin: auto;
+            background-color: #fff;
+            border: 1px solid #d5d9d9;
+            border-radius: 8px;
+            padding: 10px;
+            font-weight: bolder;
+            width: 100px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #1f1f1f;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>ChaiCode 
+            <img src="https://chaicode.com/images/cup-logo.svg" alt="">   
+        </h1>
+        <h2>SignUp</h2>
+            <form>
+                <input type="email"  placeholder="Email ID:">
+                <div id="nameHolder">
+                    <input type="firstName" id="firstName" placeholder="First Name:">
+                    <input type="lastName" id="lastName" placeholder="Last Name:">
+                </div>
+                <input type="date" placeholder="Date of Birth:">
+                <input type="" id="contactNo" placeholder="Contact No.:">
+                <input type="password" placeholder="Create password:">
+                
+                <div id="checkbox">
+                    <input type="checkbox" name="consent" id="">
+                    <label for="">I Agree Terms and Conditions</label>
+                </div>
+                <button>SignUp</button>   
+        </form>
+    </div> 
+</body>
+</html>
