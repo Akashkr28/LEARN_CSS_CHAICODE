@@ -13,6 +13,16 @@ body{
     height: 100vh;
     background-color: #b9b8d1;
 }
+
+@media (max-width: 1280px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
 .card_container{
     background-color: #ddddeb;
     max-width: 300px;
